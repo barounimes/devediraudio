@@ -7,7 +7,7 @@ from werkzeug.utils import secure_filename
 app = Flask(__name__)
 
 # Carpeta donde se guardarán los segmentos de audio
-SEGMENTS_FOLDER = "/app/segments"
+SEGMENTS_FOLDER = "/tmp/segments"
 os.makedirs(SEGMENTS_FOLDER, exist_ok=True)
 
 # Limpiar la carpeta de segmentos antes de cada división
